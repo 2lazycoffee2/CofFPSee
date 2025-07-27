@@ -1,0 +1,23 @@
+#### NOTES SUR LE RAYCASTING ####
+
+
+Technique de rendu 3D simplifiée permettant de simuler une vue première personne à l'image d'un fps. Le tout sans vraiment faire de la 3D.
+ 
+
+Le but : 
+
+Lancer des rayons dans différentes directions selon un angle déterminé (champ de vision) pou détecter la distance joueur-murs/obstacles. Chaque rayons est observé, on regarde si un mur esttouché, la distance entre ce dernier et, la hauteur donc à afficher. Si la distance est grande, on affichera une petite hauteur pour un effet de profondeur.
+
+Procédé : 
+
+On a besoin d'une carte 2D qui représentera le monde du joueur. Les cases libres seront le sole, le reste, des obstacles. 
+
+Les rayons seront envoyés dans un champde vision.
+
+
+#####							     #####
+##### note sur la vidéo de javidx9 sur le "Fast Ray Casting" #####
+#####							     #####
+
+
+Pour chaque colonne sur l'écran, on regarde si le rayon avec 
