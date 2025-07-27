@@ -20,4 +20,16 @@ Les rayons seront envoyés dans un champde vision.
 #####							     #####
 
 
-Pour chaque colonne sur l'écran, on regarde si le rayon avec 
+Pour chaque colonne sur l'écran, on regarde si le rayon avec le décor. Problème : 
+Comment est-ce que l'on fait pour travailler avec la distance du rayon jeté ?
+
+On connait le point de départ du rayon (ici, le joueur),
+On connait la direction du rayon.
+
+-> Il suffira de faire une incrémentation  pour chaque rayon jusqu'à qu'ils rencontrent quelque chose de solide.
+
+/!\ Problème de vitesse : on doit le faire pour chaque rayon et, il faudra faire l'incrémentation dans une boucle. 
+/!\ Problème de précision : si le pas d'incrémentation est large ( "-  -" au lieu de ça "- -" par exemple) On risque de rater un obstacle, si il est trop petit, le programme devient lent.
+
+
+ 
